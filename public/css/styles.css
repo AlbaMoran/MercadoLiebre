@@ -1,0 +1,37 @@
+body{
+    font-family: "Roboto";
+    font-size: 12px;
+}
+header nav ul {
+    padding: 10px 0;
+    margin: 10px 0; 
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+header{
+   background-color: #eac926;
+}
+
+.topHeader p{
+    text-align: center;
+}
+div.button-container{
+    text-align: center;
+    padding: 10px;
+}
+
+header button.Bars-menu{
+
+    border-radius: 5px;
+    background-color: #03264c;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
