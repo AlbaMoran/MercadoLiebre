@@ -1,6 +1,7 @@
 body{
     font-family: "Roboto";
     font-size: 12px;
+    
 }
 header nav ul {
     padding: 10px 0;
@@ -34,4 +35,50 @@ header button.Bars-menu{
     color: white;
     padding: 10px;
     font-size: 20px;
+}
+
+.banner{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+
+
+
+footer{
+    background-color: white;
+   
+}
+
+.iconos-footer{
+    text-align: center;
+    color: #16034c;
+    background-color: white;
+    font-size: 30px;
+    margin: 5px ;
+    
+}
+
+h4.subtitulo-footer{
+    font-size: 14px;
+    text-align: center;
+    text-decoration: dotted;
+    margin: 3px
+}
+footer p{
+    text-align: center;
+    margin-block-end: 35px;
+    margin-top: 5px;
+    padding: 5px 65px;
+}
+footer h4{
+    text-align: center;
+    font-size: 10px;
+}
+footer ul{
+    padding:10px 10px;
+    margin-top: 35px;
+   
 }
