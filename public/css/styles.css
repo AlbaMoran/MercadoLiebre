@@ -20,7 +20,11 @@ p{
 
 /*HEADER*/
 div.top-Header{
+    display: flex;
+    flex-wrap: wrap;
     padding: 5px;
+    align-items: center;
+   justify-content: center;
 }
 
 header{
@@ -32,6 +36,10 @@ header div.logo{
     padding: 10px;
 }
 
+header div.form{
+    width: 50%;
+
+}
  
 header nav{
     font-size: 12px;
@@ -236,6 +244,7 @@ footer ul{
         box-shadow: 0 0 10px rgb(100,100,100);
         width: 45%; 
     }
+    
 }
 
 @media (min-width:769px){
@@ -248,7 +257,9 @@ footer ul{
         width: 22%;
     }
     nav{
-        display:block;
+        display:flex;
+        width:100%;
+        
     }
     div.burger-menu{
         display:none;
@@ -258,5 +269,48 @@ footer ul{
         justify-content: space-around;
         flex: 40%;
     }
+    div.top-Header{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 5px;
+        align-items: center;
+       justify-content: space-between;
+    }
+
+    nav div.navbarLeft{
+        display: flex;
+        justify-content: space-between;
+        width: 50%
+       
+        
+    }
+   header nav ul.navbar-left{
+       display: flex;
+       justify-content: space-between;
+       
+   }
+   ul.navbar-left a{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+   }
    
+
+   nav div.navbarRight{
+    display:flex ;
+    justify-content:flex-end;
+    width:50%;
+   }
+   header nav ul.navbar-right{
+    display: flex;
+    justify-content: space-between;
+}
+    ul.navbar-right li a{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+}
+ul.navbar-right li a i{
+    padding: 0 10px;
+}
 }
