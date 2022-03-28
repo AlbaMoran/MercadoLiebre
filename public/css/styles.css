@@ -1,52 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Roboto";
     font-size: 12px;
-    
+    background-color: #ebebeb; 
 }
-header nav ul {
-    padding: 10px 0;
-    margin: 10px 0; 
+/*basado en tu ultima visita (seccion main)*/
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/*HEADER*/
+div.top-Header{
+    padding: 5px;
+}
+
+header{
+    background-color: #eac926;
+ }
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+ 
+header nav{
+    font-size: 12px;
 }
 
 header nav ul li{
     list-style-type: none;
 }
+
+
 header nav ul li a{
     text-decoration: none;
     color:black;
 }
 
-header{
-   background-color: #eac926;
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
 }
 
-.topHeader p{
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+.top-Header p{
     text-align: center;
 }
-div.button-container{
+
+div.burger-menu{
     text-align: center;
     padding: 10px;
 }
 
-header button.Bars-menu{
-
+div.burger-menu i{
     border-radius: 5px;
     background-color: #03264c;
     color: white;
-    padding: 10px;
+    padding: 15px 10px;
+    margin: 10px 0px 20px 0px;
     font-size: 20px;
+    width:40px;
 }
+
+header nav ul {
+    padding: 10px 0;
+    margin: 10px 0; 
+}
+
+/*BANNER*/
 
 .banner{
     text-align: center;
+    width:100%;
 }
 
+/*seccion main */
 main{
     text-align: center;
 }
+/**/
+.price{
+    font-size: 18px;
+    flex:30%;
+}
+
+.discount{
+    flex:70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,.description{
+    color: #666;
+}
+
+main{                           /*centra los recuadros de producto en la pantalla*/
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{           /* fondo al articulo y lo separa del articulo que sigue*/
+    background-color: #fff;
+    margin: 10px 0px;
+    
+}
+
+main section article img{    /* agranda la imagen del producto*/
+    width: 100%;
+}
+
+main section article i, /*color al descuento y el camion*/
+.discount{
+    color: #39b54a;
+}
+
+article div.main-article{   /*al recuadro del precio camion y descuento, le coloca un borde arriba para separarlo de la foto*/
+    width:100%;
+    border-top: 1px #ebebeb solid;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+ 
+}
+
+.description{   /*oculta la description en pantalla de 360 a 768*/
+    display: none;
+    margin-top: 20px;
+   }
+
+   
+nav{             /*oculta la lista de menu en pantalla de 360 a 768*/
+    display:none;
+   }
+
+
+/*APLICANDO FLEX*/ 
+main section article i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+}
 
 
 
+/*FOOTER*/
 footer{
     background-color: white;
    
@@ -80,5 +210,53 @@ footer h4{
 footer ul{
     padding:10px 10px;
     margin-top: 35px;
+   
+}
+
+
+@media (min-width:361px) 
+{
+    .description{
+        display:block;
+    }
+    nav{
+        display:block;
+    }
+       
+    div.burger-menu{
+        display:none;
+    }
+
+    main section .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main section article{
+        box-shadow: 0 0 10px rgb(100,100,100);
+        width: 45%; 
+    }
+}
+
+@media (min-width:769px){
+    .description{
+        display:block;
+    }
+    
+    main section article{
+        box-shadow: 0 0 10px rgb(100,100,100);   
+        width: 22%;
+    }
+    nav{
+        display:block;
+    }
+    div.burger-menu{
+        display:none;
+    }
+    .products{
+        display:flex;
+        justify-content: space-around;
+        flex: 40%;
+    }
    
 }
