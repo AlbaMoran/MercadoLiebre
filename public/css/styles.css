@@ -222,13 +222,14 @@ footer ul{
 }
 
 
-@media (min-width:361px) 
-{
+@media (min-width:361px) and (max-width:768px){
     .description{
         display:block;
     }
     nav{
-        display:block;
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
        
     div.burger-menu{
@@ -244,8 +245,67 @@ footer ul{
         box-shadow: 0 0 10px rgb(100,100,100);
         width: 45%; 
     }
+    div.top-Header{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 5px;
+        align-items: center;
+       justify-content: space-between;
+    }
     
+    header div.logo{
+        display: flex;
+        max-width: 200px;
+    }
+
+    header div.form{
+        display: flex;
+        align-items: baseline;
+        width: 30%;
+        height: 20px;
+    }
+
+    nav div.navbarLeft{
+        display: flex;
+        justify-content: space-between;
+        width: 45%
+           
+    }
+   header nav ul.navbar-left{
+       display: flex;
+       justify-content: space-between;
+       margin: 10px 5px 0 0;
+       
+   }
+   ul.navbar-left a{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+   }
+   
+
+   nav div.navbarRight{
+    display:flex ;
+    justify-content:flex-end;
+    width:40%;
+   }
+   header nav ul.navbar-right{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 5px;/**/
+    font-size: 10px;/**/
 }
+
+    ul.navbar-right li a{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+}
+    ul.navbar-right li a i{
+    padding: 0 3px;
+    }
+}
+
 
 @media (min-width:769px){
     .description{
@@ -267,7 +327,7 @@ footer ul{
     .products{
         display:flex;
         justify-content: space-around;
-        flex: 40%;
+        flex: 22%;
     }
     div.top-Header{
         display: flex;
@@ -276,13 +336,18 @@ footer ul{
         align-items: center;
        justify-content: space-between;
     }
+    header div.logo{
+        width: 25%;
+    }
+    header div.form{
+        width: 25%;
+    }
 
     nav div.navbarLeft{
         display: flex;
         justify-content: space-between;
         width: 50%
-       
-        
+           
     }
    header nav ul.navbar-left{
        display: flex;
@@ -313,4 +378,4 @@ footer ul{
 ul.navbar-right li a i{
     padding: 0 10px;
 }
-}
+}}
