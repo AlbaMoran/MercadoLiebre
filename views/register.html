@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MercadoLiebre</title>
+       
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="/css/styles.css" rel="stylesheet">
+        <script>
+            function validar(){
+                if(document.getElementById("password").value == document.getElementById("password-verify").value){
+                    document.getElementById("password-verify").style.backgroundColor="green"
+                    document.getElementById("password-error-message").innerHTML=undefined
+            }
+            else{
+                document.getElementById("password-verify").style.backgroundColor="pink"
+                document.getElementById("password-error-message").innerHTML="Las contraseñas no coinciden"
+                }
+            }
+        </script>
+
+    </head>
+<body>
+    <header>
+        <div class="top-Header">
+        <div class="logo"> 
+            <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+        </div>
+        <div class="form" action="#" method="GET">
+            <div class="input">Buscar productos, marcas y más</div>
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+    </div>
+        <nav>
+        <div class="navbarLeft">
+        <ul class="navbar-left">
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Tiendas Oficiales</a></li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Ayuda</a></li>
+        </div>
+      
+        </ul>
+        <div class="navbarRight">
+            <ul class="navbar-right">
+                <li><a href="/register"> Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </div>
+
+        </nav>
+        <div class="burger-menu">
+             <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    
+    <h2>Formulario de registro Nuevo Usuario</h2>
+    <section class="section-register">
+    <form action="/register.html" method="POST" class="formulario">
+        <div class="control-formulario">
+            <label for="nombre"><h4> Nombre y Apellido</h4></label>
+            <input type="text" name="nombre" id="nombre"   min-length="2" class="control">
+        </div>
+        <div class="control-formulario">
+            <label for="usuario"><h4> Nombre de Usuario</h4></label>
+            <input type="text" name="usuario" id="usuario"  min-length="2"  class="control">
+        </div>
+        <div class="control-formulario">
+            <label for="fechanac"><h4>Fecha de nacimiento</h4></label>
+            <input type="date" name="fechanac" id="fechanac" class="control">
+        </div>
+        <div class="control-formulario">
+            <label for="domicilio"><h4> Domicilio</h4></label>
+            <input type="text" name="domicilio"  id="domicilio"class="control">
+        </div>
+        <div class="perfil">
+            <h4> Perfil del usuario</h4>
+            
+            <label for="perfil"> Comprador </label>
+            <input type="radio" name="perfil"  value= "comprar">
+            
+            <label for="perfil"> Vendedor </label>
+            <input type="radio" name="perfil" value="vender">
+        </div>
+
+        <div class="control-formulario">
+            <H4> Categoria de Intereses:</h4>
+            
+            <h4> <input type="checkbox" name="categorias" value="electro" class="itemCategorias">ELECTRO</h5>
+            <h4> <input type="checkbox" name="categorias" value="moda" class="itemCategorias">MODA</h4>
+            <h4> <input type="checkbox" name="categorias" value="hogar" class="itemCategorias">HOGAR</h4>
+            <h4> <input type="checkbox" name="categorias" value="jugueteria" class="itemCategorias">JUGUETERIA</h4>
+            <h4> <input type="checkbox" name="categorias" value="vida-sana" class="itemCategorias">VIDA SANA</h4>
+        </div>    
+        
+        <div class="control-formulario">
+                <label for="avatar"><h4> Foto de Usuario</h4></label>
+                <input type="file" name="avatar" accept=".jpg, .png, .jpeg" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <label for="password"><h4> Contraseña</h4></label>
+            <input type="password" name="password"  min-length="5"  placeholder="Escribe tu contraseña" required>
+        </div>
+
+        <div class="control-formulario">
+            <label for="password-verify"> <h4>Confirmar Contraseña</h4></label>
+            <input type="password" name="password-verify" required  min-length="5" placeholder="Repite tu contraseña"  onkeyup="validar()">
+        </div>
+        <div>
+            <span id="password-error-message"></span>
+        </div>
+        <div class="control-formulario">
+            <button class="enviar">
+                <a href="/">Enviar </a>
+            </button>
+            <button class="reset">
+                <input type="reset" value="Borrar formulario">
+            </button>
+        </div>
+    </form>
+</section>
+
+
+    <footer>
+        <ul> 
+        
+        <div class="iconos-footer">  
+            <i class="fas fa-credit-card"></i>
+        </div> 
+            <h4 class="subtitulo-footer">Pagá con tarjeta o en efectivo</h4>
+            <p>Con Mercado Libre Cash, tenés cuotas sin interes con tarjeta o efectivo en puntos de pago.¡Y Siempre es seguro!</p>
+           
+        <div class="iconos-footer">  
+                <i class="fas fa-gift"></i>
+        </div>       
+            <h4 class="subtitulo-footer">Envio gratis desde $ 2.500</h4>
+            <p>Solo por estar registrada en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Marcado Puntos.</p>
+            
+        <div class="iconos-footer"> 
+            <i class="fas fa-user-shield"></i>
+        </div>      
+    
+            <h4 class="subtitulo-footer"> Seguridad, de principio a fin</h4>
+            <p>¿No te gusta?¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+            <h4>Copyright c 1999-2020 MarcadoLiebre S.R.L.</h4>
+        </ul>
+    </footer>
+
+</body>
+</html>
