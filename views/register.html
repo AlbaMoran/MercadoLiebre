@@ -13,17 +13,18 @@
             function validar(){
                 if(document.getElementById("password").value == document.getElementById("password-verify").value){
                     document.getElementById("password-verify").style.backgroundColor="green"
-                    document.getElementById("password-error-message").innerHTML=undefined
+                    document.getElementById("password-error-message").innerHTML=''
             }
             else{
                 document.getElementById("password-verify").style.backgroundColor="pink"
                 document.getElementById("password-error-message").innerHTML="Las contraseñas no coinciden"
                 }
+                console.log("paso");
             }
         </script>
 
     </head>
-<body>
+<body class="register">
     <header>
         <div class="top-Header">
         <div class="logo"> 
@@ -33,7 +34,7 @@
             <div class="input">Buscar productos, marcas y más</div>
             <div class="submit"><i class="fa fa-search"></i></div>
         </div>
-        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <p class="header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
     </div>
         <nav>
         <div class="navbarLeft">
@@ -58,8 +59,8 @@
              <i class="fa fa-bars burger"></i>
         </div>
     </header>
-    
-    <h2>Formulario de registro Nuevo Usuario</h2>
+    <div class="titulo">
+    <h2>Formulario de registro Nuevo Usuario</h2></div>
     <section class="section-register">
     <form action="/register.html" method="POST" class="formulario">
         <div class="control-formulario">
@@ -105,12 +106,12 @@
 
         <div class="control-formulario">
             <label for="password"><h4> Contraseña</h4></label>
-            <input type="password" name="password"  min-length="5"  placeholder="Escribe tu contraseña" required>
+            <input type="password" name="password"  id="password" min-length="8"  placeholder="Escribe tu contraseña" required>
         </div>
 
         <div class="control-formulario">
             <label for="password-verify"> <h4>Confirmar Contraseña</h4></label>
-            <input type="password" name="password-verify" required  min-length="5" placeholder="Repite tu contraseña"  onkeyup="validar()">
+            <input type="password" name="password-verify" id="password-verify" required  min-length="5" placeholder="Repite tu contraseña"  onkeyup="validar()">
         </div>
         <div>
             <span id="password-error-message"></span>
@@ -127,30 +128,34 @@
 </section>
 
 
-    <footer>
-        <ul> 
-        
-        <div class="iconos-footer">  
-            <i class="fas fa-credit-card"></i>
-        </div> 
+<footer>
+    <ul> 
+         <div class="ft-sector">
+         <div class="iconos-footer">  
+           <i class="fas fa-credit-card"></i>
+         </div> 
             <h4 class="subtitulo-footer">Pagá con tarjeta o en efectivo</h4>
             <p>Con Mercado Libre Cash, tenés cuotas sin interes con tarjeta o efectivo en puntos de pago.¡Y Siempre es seguro!</p>
-           
-        <div class="iconos-footer">  
-                <i class="fas fa-gift"></i>
-        </div>       
+        </div>  
+        <div class="ft-sector">
+            <div class="iconos-footer">  
+            <i class="fas fa-gift"></i>
+            </div>       
             <h4 class="subtitulo-footer">Envio gratis desde $ 2.500</h4>
             <p>Solo por estar registrada en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Marcado Puntos.</p>
-            
-        <div class="iconos-footer"> 
+        </div>
+        <div class="ft-sector">
+            <div class="iconos-footer"> 
             <i class="fas fa-user-shield"></i>
-        </div>      
-    
+            </div>      
+
             <h4 class="subtitulo-footer"> Seguridad, de principio a fin</h4>
             <p>¿No te gusta?¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
-            <h4>Copyright c 1999-2020 MarcadoLiebre S.R.L.</h4>
-        </ul>
-    </footer>
-
+        </div>
+    </ul>
+    <div class="ft-sectorbottom">
+        <h4>Copyright c 1999-2020 MarcadoLiebre S.R.L.</h4>
+    </div>
+</footer>
 </body>
 </html>
