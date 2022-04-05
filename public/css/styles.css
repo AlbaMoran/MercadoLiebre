@@ -40,6 +40,7 @@ header {
   position:fixed;
   top:0;
   z-index:100;
+  font-size: 18px;
   
 }
 
@@ -63,7 +64,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: x-small;
+  font-size: 17px;
 }
 
 header .form .input {
@@ -73,6 +74,7 @@ header .form .input {
   width:fit-content;
   color: #666;
   padding: 2px;
+  font-size: 12px;
 }
 
 header .form .submit {
@@ -91,6 +93,7 @@ header .form .submit {
 div.burger-menu {
   text-align: center;
   padding: 10px;
+  margin-top: -10px;
 }
 
 div.burger-menu i {
@@ -210,6 +213,15 @@ main section article:hover i {
 /*FOOTER*/
 footer {
   background-color: white;
+  
+  
+}
+footer.login {
+  background-color: white;
+  position:fixed;
+  bottom: 0;
+  z-index:100;
+  font-size: 18px;
 }
 
 .iconos-footer {
@@ -405,7 +417,7 @@ main section article:hover {
 
   header div.logo {
     display: flex;
-    max-width: 200px;
+    max-width: 150px;
   }
 
   header div.form {
@@ -431,6 +443,8 @@ main section article:hover {
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
+    font-size:  10px;
+
   }
 
   nav div.navbarRight {
@@ -452,6 +466,7 @@ main section article:hover {
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
+    font-size: 10px;
   }
 
   ul.navbar-right li a i {
@@ -468,11 +483,23 @@ main section article:hover {
     width: 22%;
   }
 
+  div.logo img{
+    width: 75%;
+  }
+
   nav {
     display: flex;
     width: 90%;
     height: 40px;
     
+  }
+
+  header{
+    height: 175px;
+  }
+
+  p.header{
+    font-size: 16px;
   }
 
   div.burger-menu {
@@ -488,21 +515,32 @@ main section article:hover {
   div.top-Header {
     display: flex;
     flex-wrap: nowrap;
-    margin: 0;
+    margin: 10px 0 3px 5px;
     max-height: 100px;
     padding: 5px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   header div.logo {
-    width: 20%;
+    width: 30%;
+  }
+  header div.logo img{
+    width:60%;
+    padding: 10px;
+    margin-top: 20px;
   }
 
   header div.form {
-    width: 25%;
-    display: flex;
+    width: 20%;
+        
   }
+  header .form .input{
+    width: 300px;
+    margin: 0;
+  }
+
+ 
 
   nav div.navbarLeft {
     display: flex;
@@ -542,12 +580,77 @@ main section article:hover {
   }
 
   ul.navbar-right li a i {
-    padding: 0 10px;
+    padding: 0 7px;
   }
+
+/*register*/
+div.titulo{
+  
+    width: 761px;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    
+}
+h2{
+  width: 761px;
+}
+.control-formulario {
+  width: 100%;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 17px;
+}
+ input.control{
+   font-size: 16px;
+ }
+ div.perfil{
+   font-size: 22px;
+   display: inline;
+    }
+ div.perfil h4 label{
+  margin-bottom: 10px;
+ }
+
+ button.enviar, input.reset, div button input{
+   font-size: 22px;
+ }
+
+  body.register {
+    font-family: "Roboto";
+    font-size: 16px;
+    background-color: #ebebeb;
+    margin-top: 280px;
+}
+  section.section-register {
+    border: #000 1px solid;
+    width: 761px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 30px 20px;
+}
+  form.formulario{
+    width:70%
+}
+
+  form.login{
+    width: 70%;
+    
+  }
+  div.lg-form input{
+    font-size: 22px;
+  }
+
+
 
   /*footer en 769 en adelante*/
   footer ul {
     display: flex;
+    justify-content: center;
+    font-size: 12px;
   }
 
   footer ul div.ft-sector {
@@ -555,5 +658,16 @@ main section article:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  h4.subtitulo-footer{
+    font-size: 16px;
+  }
+
+  p.footer{
+    font-size: 14px;
+  }
+  div.iconos-footer{
+    font-size: 35px;
   }
 }
