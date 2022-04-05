@@ -218,10 +218,10 @@ footer {
 }
 footer.login {
   background-color: white;
-  position:fixed;
+ /* position:fixed;
   bottom: 0;
   z-index:100;
-  font-size: 18px;
+  font-size: 18px;*/
 }
 
 .iconos-footer {
@@ -586,14 +586,14 @@ main section article:hover {
 /*register*/
 div.titulo{
   
-    width: 761px;
+    width: 640px;
     display: flex;
     justify-content: center;
     margin: 15px auto;
     
 }
 h2{
-  width: 761px;
+  width: 640px;
 }
 .control-formulario {
   width: 100%;
@@ -626,7 +626,7 @@ h2{
 }
   section.section-register {
     border: #000 1px solid;
-    width: 761px;
+    width: 640px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -644,9 +644,15 @@ h2{
     font-size: 22px;
   }
 
+  section.blanc{
+    height: 200px;
 
+
+}
 
   /*footer en 769 en adelante*/
+
+
   footer ul {
     display: flex;
     justify-content: center;
