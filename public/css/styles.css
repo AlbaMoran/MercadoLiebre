@@ -11,6 +11,8 @@ body {
   margin-top:170px;
 }
 
+
+
 /*basado en tu ultima visita (seccion main)*/
 h3 {
   font-size: 24px;
@@ -261,6 +263,16 @@ footer ul {
   margin-top: 35px;
 }
 
+footer.underconstruction{
+  position: fixed;
+  margin-bottom: 0;
+}
+
+div.underconstruction{
+  text-align: center;
+  margin: 50px;
+  height: 380px;
+}
 /* FORMULARIO REGISTER*/
   body.register{
     margin-top: 200px;

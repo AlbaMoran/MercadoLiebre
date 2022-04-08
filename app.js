@@ -17,3 +17,6 @@ app.get('/register', function(req,res) {
 app.get('/login', function(req,res) {
     res.sendFile(path.resolve(__dirname, 'views/login.html'))
 });
+    app.get('/underConstruction', function(req,res) {
+        res.sendFile(path.resolve(__dirname, 'views/underConstruction.html'))
+});
