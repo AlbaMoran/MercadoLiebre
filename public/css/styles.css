@@ -180,7 +180,8 @@ article div.main-article {
 
 .description {
   /*oculta la description en pantalla de 360 a 768*/
-  display: none;
+  /*display: none;*/
+  opacity: 0;
   margin-top: 20px;
 }
 
@@ -271,8 +272,8 @@ footer ul {
   margin: auto;
   justify-content: center;
   width: 361px;
-  border: #000 1px solid;
-  background-color: #3f51b5;
+  border: #c4c4c4 1px solid;
+  background-color: #3f89b5;
   color: #fff;
 }
 
@@ -312,18 +313,18 @@ div button {
   padding: 3px;
   margin: 10px 0;
   width: 100%;
-  background-color: #3f51b5;
+  background-color: #3f89b5;
   border-radius: 48px;
   color: #fff;
-  transition-duration: 1050ms;
+  transition-duration: 650ms;
 }
 
 div button input {
-  background-color: #3f51b5;
+  background-color: #3f89b5;
   color: #fff;
   width: 100%;
   border: none;
-  transition-duration: 1050ms;
+  transition-duration: 650ms;
 }
 
 div button a {
@@ -337,7 +338,7 @@ div button input:visited {
 
 div button:hover,
 div button input:hover {
-  background-color: green;
+  background-color: rgb(202, 181, 16);
 }
 .formulario [type="text"],
 .formulario [type="date"],
@@ -368,7 +369,7 @@ button.enviar:hover {
 }
 
 div.iconos-footer i:hover {
-  color: rgba(91, 128, 230, 0.397);
+  color: #3f89b5;
 }
 
 main section article:hover {
@@ -388,7 +389,8 @@ main section article:hover {
   }
 
   main section article:hover .description {
-    display: block;
+    /*display: block;*/
+    opacity: 100;
   }
 
   nav {
@@ -476,7 +478,8 @@ main section article:hover {
 
 @media (min-width: 769px) {
   main section article:hover .description {
-    display: block;
+    /*display: block*/
+    opacity: 100;
   }
 
   main section article {
@@ -589,7 +592,7 @@ div.titulo{
     width: 640px;
     display: flex;
     justify-content: center;
-    margin: 15px auto;
+    margin: 15px auto 0 auto;
     
 }
 h2{
@@ -607,7 +610,7 @@ h2{
    font-size: 16px;
  }
  div.perfil{
-   font-size: 22px;
+   font-size: 17px;
    display: inline;
     }
  div.perfil h4 label{
@@ -616,6 +619,7 @@ h2{
 
  button.enviar, input.reset, div button input{
    font-size: 22px;
+   border-radius: 18px;
  }
 
   body.register {
@@ -625,12 +629,13 @@ h2{
     margin-top: 280px;
 }
   section.section-register {
-    border: #000 1px solid;
+    border: #c4c4c4 1px solid;
     width: 640px;
     display: flex;
     justify-content: center;
     margin: auto;
     padding: 30px 20px;
+    background-color: rgba(102, 102, 102, 0.32);
 }
   form.formulario{
     width:70%

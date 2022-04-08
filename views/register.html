@@ -12,7 +12,7 @@
         <script>
             function validar(){
                 if(document.getElementById("password").value == document.getElementById("password-verify").value){
-                    document.getElementById("password-verify").style.backgroundColor="green"
+                    document.getElementById("password-verify").style.backgroundColor="greenyellow"
                     document.getElementById("password-error-message").innerHTML=''
             }
             else{
@@ -39,7 +39,7 @@
         <nav>
         <div class="navbarLeft">
         <ul class="navbar-left">
-            <li><a href="">Ofertas</a></li>
+            <li><a href="/">Ofertas</a></li>
             <li><a href="">Tiendas Oficiales</a></li>
             <li><a href="">Vender</a></li>
             <li><a href="">Ayuda</a></li>
@@ -106,7 +106,7 @@
 
         <div class="control-formulario">
             <label for="password"><h4> Contraseña</h4></label>
-            <input type="password" name="password"  id="password" min-length="8"  placeholder="Escribe tu contraseña" required>
+            <input type="password" name="password"  id="password" required min-length="8"  placeholder="Escribe tu contraseña" >
         </div>
 
         <div class="control-formulario">
